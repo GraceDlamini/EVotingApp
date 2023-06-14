@@ -1,40 +1,20 @@
-<!--Vote.com created by Andrew George-->
+
 <!--version 1.0-->
 <html>
     <head>
         <meta charset="utf-8">
         <title>EMIHLE | VOTING APP</title>
-        <link rel="shortcut icon" type="image/png" href="images/vote-icon.png">
-        <!-- <style>
+        <link rel="shortcut icon" type="image/png" href="images/vote-icon.png"class="rotate-image">
+        <style>
             @keyframes rotate {
-                0% {
-                    transform: rotate(0deg);
-                }
-                100% {
-                    transform: rotate(360deg);
-                }
+              from { transform: rotate(0deg); }
+              to { transform: rotate(360deg); }
             }
-    
-            .animated-image {
-                animation: rotate 30s linear infinite;
+        
+            .rotate-image {
+              animation: rotate 2s infinite linear;
             }
-        </style> --> <style>
-        @keyframes rotate {
-            0% {
-                transform: rotate(0deg) translateX(0px);
-            }
-            50% {
-                transform: rotate(180deg) translateX(50px);
-            }
-            100% {
-                transform: rotate(360deg) translateX(0px);
-            }
-        }
-
-        .animated-image {
-            animation: rotate 6s linear infinite;
-        }
-    </style>
+          </style>
 
         <link rel="stylesheet" href="css/s1.css">
         <!--Bootstrap-->
@@ -98,7 +78,28 @@
                 </div>
               </div>
               
-              
+              <style>
+                @keyframes floating {
+                    0% {
+                        transform: translateY(0);
+                    }
+                    50% {
+                        transform: translateY(8px);
+                    }
+                    100% {
+                        transform: translateY(0);
+                    }
+                }
+            
+                .candidate-image {
+                    display: block;
+                    margin: 0 auto;
+                    max-width: 100%; /* Set the maximum width to 100% */
+                    height: auto; /* Maintain aspect ratio */
+                    animation: floating 3s ease-in-out infinite;
+                }
+            </style>
+            
         </section>
         <section id="footer">
             
